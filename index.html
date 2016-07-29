@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonic</title>
+</head>
+<body>
+  <div id="vm">
+    <span v-text="item"></span>
+  </div>
+  <script src="/sonic.js"></script>
+  <script>
+  var sonicvm = new Sonic({
+    el: document.getElementById('vm'),
+    model: {
+      item: 'hello'
+    }
+  })
+  </script>
+</body>
+</html>
